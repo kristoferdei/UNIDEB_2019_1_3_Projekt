@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8"></meta>
+		<title>Funkcionális Specifikáció</title>
+	</head>
+
+	<body>
+
+		<h1>Funkcionális Specifikáció</h1>
+
+		<h2>1.Hogy állunk jelenleg?</h2>
+
+		<p>
+			-Hogyan áll per pillanat a rendszer? Mi az amit már biztosan tudunk róla?
+
+			A rendszer jelenleg a tervezés és az ötletelés szakaszában van.
+			A csapat minden tagja felvázolja az elképzelését, felsorakoztatja az érveit,
+			amiket összegyűjtünk, mérlegelünk. Megvitatjuk mi az amit felhasználunk, 
+			milyen irányokba lehetne még elmozdulni. Jelen pillanatban biztosan tudjuk azt,
+			hogy egy nyelvtanulást segítő rendszert szeretnénk létrehozni. Szeretnénk, hogy
+			több idegen nyelvet kezeljen a program, akár több szinten is. Szeretnénk, hogy
+			Több felhasználó tudja használni, tehát legyen bejelentkezési lehetőség. Célunk,
+			Hogy könnyen kezelhető programot hozzunk létre, ami letisztult és átlátható.
+			Fontos az is, hogy ennek segítségével gördülékenyen menjen az adott nyelv tanulása
+			és egyben eredményes legyen.
+		</p>
+
+		<h2>2.A felhasználók álma</h2>
+
+		<p>
+			-A felhasználók szemszögéből hogyan állna össze az "álomrendszer"
+
+			A felhasználó álma az, hogy a program segítségével a lehető leghamarabb elsajátítsa
+			Az általa választott nyelvet. Egy olyan program segítségével, ami jól néz ki,
+			Könnyen kezelhető, letisztult felülettel rendelkezik. Rendelkezésre állnak számára
+			képek, ábrák, animációk. Saját profilt tud létrehozni. Mentheti, követheti az állását.
+			Versenyezhet ismerőseivel. A létező összes nyelv közül választhat. A nyelveken belül
+			többféle nehézségi szint közül választhat. Ellenőrizheti tudását. Különböző témakörök
+			közül választhat. Szeretné, ha különféle tesztek írására is lehetőséget kapna.
+			Úgy szabhatná testre ezáltal a nyelvtanulás folyamatát, ahogyan az neki megfelelő és
+			a leginkább hatékony. 
+		</p>
+
+		<h2>3.Befolyásoló tényezők</h2>
+
+		<p>
+			A mai világban hatalmas igény van a nyelvtudás iránt. A cégeknél egy középvezetői vagy annál
+			magasabb szintű munkakörben alapkövetelmény legalább az angol nyelv ismerete. De nem csak a
+			munkában hanem az élet más területein is egyre fontosabb, hogy ne csak az anyanyelvünkön
+			tudjunk megszólalni. Ezen tényezők miatt van szükség nyelvtanuló szoftverekre, amelyek
+			a hatékony, gyors módszerükkel megkönnyítik a felhasználók számára az ismeretek megszerzését.
+			Az utóbbi időben Magyarország is lepéseket tett annak érdekében, hogy szorgalmazza az
+			embereket a nyelvtudás elsajátítására. Ennek egyik eszköze a nyelvtörvény amely 2019-es évtől
+			megköveteli az egyetemre jelentkezőktől a nyelvvizsgát. Másik befolyásoló tényező a
+			rohamosan fejlődő technika, mivel a papíralapú tanulás már elavultnak számít, így
+			szükség van ilyen szoftverek kialakítására. Azért is készült ez a program, hogy elérhető
+			legyen hátrányos anyagi helyzetű emebreknek is akik, nem tudják megfizetni a nyelviskolák,
+			nyelvtanárok szolgáltatásait.
+		</p>
+
+		<h2>4.Látványterv</h2>
+
+		<p>
+			-Hogyan fog kinézni az alkalmazás.
+
+			A program futásakor középen felül egy "Üdvözlünk az alkalmazásban!" felirat, alatta pedig egy felület jelenne meg,
+			ahol a felhasználó bejelentkezhet vagy választhatja a "belépés vendégként" gombot.Sikeres bejelentkezés
+			után a választható idegennyelvek képei jelennek meg, ami az adott nyelv országát azonosítja,
+			(akár paintben is meg lehet rajzolni, hogy egyedibb legyen a kép), és a felhasználó ezekre a
+			képekre kattintva választ nyelvet. A választott nyelv után pedig már csak egy zászló marad mégpedig az,
+			amelyik választva lett és az első szópár megjelenik.
+			A program bal alsó sarkában egy gomb biztosítja a visszalépést "Ez nem jó!" felirattal, ha esetleg más nyelvet választanánk.
+			A másik oldal alján pedig "Következő" szöveggel ellátott gomb látható ami a következő szópár megjelenését
+			fogja eredményezni, a szópárok a képernyő közepén fognak megjelenni, illetve itt már egy "Előző" gomb is 
+			megjelenik, ha esetleg újra megszeretnénk tekinteni az előző szópárt. A tanulási folyamatnál egy szám jelzi,
+			hogy épp hanyadik szópárnál jár a felhasználó. A 10. szópár után, középen alul megjelenik a teszt gomb, 
+			a teszt elkezdéséhez, de persze itt még megmarad a "Következő" feliratú gomb, ha 10-nél több
+			szót szeretnénk egyszerre megtanulni. A teszt résznél középen felül egy "Teszt" felirat jelenik meg, 
+			valamint piros és zöld színekben jelennek meg a jól és a rosszul megadott szavak háttere, 
+			amiket a felhasználó válaszként beírhat ezzel jelezve, hogy rosszul válaszolt az adott feladatra,
+			ez esetben megjelenik, hogy mit kellett volna beírnia válaszként a megadott szó helyére. Itt is van jobb alul
+			egy "Következő" feliratú gomb ami a teszt következő szópárjához vezet. A teszt végén, amikor már mindent
+			jól adott meg kétszer, előjön egy felugró ablak amin egy "Gratulálunk" szöveg, és az újonnan megtanult
+			szavak száma van. Ezen a felugró ablak bal alsó részében szintén egy gomb van "Vissza a kezdőképernyőre" felirattal.
+			Minden gombra igaz, hogyha az egeret rávisszük, akkor színt vált a háttere.
+		</p>
+
+		<h2>5.A program futása</h2>
+
+		<p>
+			Minden esetet onnan kezdődően tekintsünk,hogy a felhasználó elindította
+			a programot:
+
+			Bejelentkezés -> Sikeres bejelentkezés -> Indul a program.
+			Bejelentkezés -> Sikertelen bejelentkezés -> Újrapróbálás -> Sikertelen bejelentkezés ->
+			Elfelejtett jelszó -> Visszaállító kód -> Jelszó megjelenítése helye megadás esetén ->
+			Helytelen esetén újrakérdezés -> Helyes megadás esetén jelenlegi jelszó megjelenítése ->
+			Szeretne-e új jelszót? -> Igen, új jelszó bekérése és beállítása -> Nem, ablak bezárása és visszatérés
+			a bejelentkezéshez.
+
+			A felhasználó a kilépés gombot választja -> a program leáll.
+
+			A felhasználó a kezdés gombot választja -> Megjelennek a választható nyelvek ->
+			Megtörténik a választás -> Elindul a tanulási folyamat -> Megjelennek a szavak
+			az idegen nyelvű megfelelőjükkel eggyütt -> A felhasználó megpróbálja memorizálni ->
+			A követhező gombra kattint -> megjelenik a következő szópár és ez így folytatódik,
+			amíg legalább 10 pár meg nem jelent -> A második után megjelenik egy előző gomb ->
+			Ha a felhasználó az előző gombot választja, akkor újra megtekintheti az előző szópárt ->
+			Miután a 10.,addig még nem láttot pár is megjelent megjelenik egy teszt
+			gomb -> A felhasználó tovább tanulhat mégtöbb szót(ebben az esetben folyamatosan
+			bővül a tesztben visszakérdezett szavak halmaza is) vagy megáll és teszteli jelenlegi tudását ->
+			A tesztre kattint a felhasználó -> Ismét szópárok jelennek meg, ezúttal viszont hiányosan. ->
+			Megpróbálja kitölteni a hiányzó részt, ami lehet akár a magyar, akár az idegen nyelvű szó is ->
+			A program kiértékeli a válaszát -> Visszajelez a felhasználónak ->Rossz válasz esetén megmutatja a helyes választ-> 
+			Jön a következő szópár -> Elősegítve a felhasználó tanulását a már korábban megtanult szavakból is jelenhetnek meg ->
+			Addig megy a teszt amíg a felhasználó minden újonan tanult szót legalább kétszer el nemt talált. ->
+			Minden új szópár kétszer helyesen ki lett egészítve -> Az új szavak bekerülnek a már megtanul szavak halmazába ->
+			Gratuláló szöveg megjelenítése, az újonnan tanult szavak számával együtt -> A tovább gombra kattintás ->
+			Újra a kezdőképernyő megjelenítése. 
+		</p>
+
+		<h2>6.Megvalósítható?</h2>
+		
+		<p>
+			A projekt megvalósításához nem szükséges túl sok eszköz. A feladatok 
+			követésére egy online feladatkövető rendszert használunk, a Trellot, ahol
+			eggyeztetjük a teendőket, felosztjuk a feladatokat és megbeszéljük azokat 
+			egymás között. A szoftver menedzseléséhez az Apache Maven nevezetű eszközt
+			használjuk. A programnak szüksége van adatbázisra, amihez JSON fájlokat
+			fogunk használatba venni. Maga a program Java nyelven fog íródni, de szükség
+			van egy grafikus felhasználói felületre is, ennek elkészítéséhez JavaFX
+			szoftvert fogjuk használni. Verziókezelőnek pedig a git-et használjuk.
+		</p>
+	</body>
+</html>

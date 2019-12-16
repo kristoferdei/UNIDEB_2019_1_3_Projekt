@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="udvPane" fx:id="udvPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UdvozloController">
+   <children>
+      <Pane id="signPane" fx:id="signPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D3D3D3;">
+         <children>
+            <Text layoutX="204.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Üdvözlünk az alkalmazásban" textAlignment="CENTER" wrappingWidth="192.779296875">
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font>
+            </Text>
+            <TextField id="userName" fx:id="userName" layoutX="218.0" layoutY="152.0" prefHeight="30.0" prefWidth="165.0" promptText="Felhasználónév">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </TextField>
+            <PasswordField id="passWord" fx:id="passWord" layoutX="218.0" layoutY="191.0" prefHeight="30.0" prefWidth="165.0" promptText="Jelszó">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </PasswordField>
+            <Button id="signIn" fx:id="signIn" layoutX="241.0" layoutY="238.0" mnemonicParsing="false" onAction="#handleLogInButtonClicked" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" prefHeight="40.0" prefWidth="118.0" style="-fx-background-color: #696969;" text="Bejelentkezés" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Button id="newPassButt" fx:id="newPassButt" alignment="CENTER" layoutX="251.0" layoutY="359.0" mnemonicParsing="false" onAction="#handleNewPassButtonClicked" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" prefHeight="27.0" prefWidth="99.0" style="-fx-background-color: #696969;" text="Új jelszó" textFill="WHITE" visible="true">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Button id="quitButt" fx:id="quitButt" layoutX="487.0" layoutY="359.0" mnemonicParsing="false" onAction="#quitButtClicked" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" prefHeight="27.0" prefWidth="99.0" style="-fx-background-color: #696969;" text="Kilépés" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Text layoutX="237.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Elfelejtettem a jelszavamat">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+            <Button id="regButt" fx:id="regButt" layoutX="14.0" layoutY="359.0" mnemonicParsing="false" onAction="#regButtClicked" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" prefHeight="27.0" prefWidth="99.0" style="-fx-background-color: #696969;" text="Regisztáció" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane id="langPane" fx:id="langPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D3D3D3;" visible="false">
+         <children>
+            <Text layoutX="177.0" layoutY="76.0" text="Válassz nyelvet!">
+               <font>
+                  <Font name="Arial" size="34.0" />
+               </font>
+            </Text>
+            <ImageView id="englishFlag" fx:id="englishFlag" fitHeight="150.0" fitWidth="200.0" layoutX="77.0" layoutY="125.0" onMousePressed="#handleFlagImageClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/English.png" />
+               </image>
+            </ImageView>
+            <ImageView id="englishFlag" fx:id="frenchFlag" fitHeight="116.0" fitWidth="200.0" layoutX="323.0" layoutY="125.0" onMousePressed="#handleFlagImageClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/French.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

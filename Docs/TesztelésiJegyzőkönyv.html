@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Tesztelési Jegyzőkönyv</title>
+    </head>
+    <body>
+        <h2>Bejelntkezés teszt</h2>
+        
+        <div style="display:flex;justify-content: center">
+            <table style="border-collapse: collapse;">
+                <thead>
+                    <tr style="text-align: center;">
+                        <td style="border:2px solid black;padding:1rem">
+                            <b>Teszt kódja</b>
+                        </td>
+                        <td style="border:2px solid black;padding:1rem">
+                            <b>Teszt leírása</b>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr >
+                        <td style="border:2px solid black;padding:2rem">
+                            <b>B-1</b>
+                        </td>
+                        <td  style="border:2px solid black;padding:1rem">
+                            Egy valid passwordot tesztelünk.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  style="border:2px solid black;padding:2rem">
+                            <b>B-2</b>
+                        </td>
+                        <td  style="border:2px solid black;padding:1rem">
+                            Ne fogadja el a maximálisnál hosszabb jelszót.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  style="border:2px solid black;padding:2rem">
+                            <b>B-3</b>
+                        </td>
+                        <td  style="border:2px solid black;padding:1rem">
+                            Speciális karakter a jelszó kezdőbetűje.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  style="border:2px solid black;padding:2rem">
+                            <b>B-4</b>
+                        </td>
+                        <td  style="border:2px solid black;padding:1rem">
+                            Speciális karakter a jelszó közepén.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  style="border:2px solid black;padding:2rem">
+                            <b>B-5</b>
+                        </td>
+                        <td  style="border:2px solid black;padding:1rem">
+                            Pontosan a megendegett hosszúsági jelszót elfogadja.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  style="border:2px solid black;padding:2rem">
+                            <b>B-6</b>
+                        </td>
+                        <td  style="border:2px solid black;padding:1rem">
+                            Használatban lévő felhasználónevet ne fogadja el.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  style="border:2px solid black;padding:2rem">
+                            <b>B-7</b>
+                        </td>
+                        <td  style="border:2px solid black;padding:1rem">
+                            Hasher függvény lefut-e.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  style="border:2px solid black;padding:2rem">
+                            <b>B-8</b>
+                        </td>
+                        <td  style="border:2px solid black;padding:1rem">
+                            A hasher függvény tesz-e valamit a jelszóhoz.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  style="border:2px solid black;padding:2rem">
+                            <b>B-9</b>
+                        </td>
+                        <td  style="border:2px solid black;padding:1rem">
+                            Sikeres-e a hasher metódus, tehát helyesen tette hash-ek közé a jelszót.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <h2>Teszt folyamat teszt</h2>
+        
+        <div style="display:flex;justify-content: center">
+            <table style="border-collapse: collapse;">
+                <thead>
+                    <tr style="text-align: center;">
+                        <td style="border:2px solid black;padding:1rem">
+                            <b>Teszt kódja</b>
+                        </td>
+                        <td style="border:2px solid black;padding:1rem">
+                            <b>Teszt leírása</b>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr >
+                        <td style="border:2px solid black;padding:2rem">
+                            <b>T-1</b>
+                        </td>
+                        <td style="border:2px solid black;padding:1rem">
+                            getLearned() metódus lefut-e.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  style="border:2px solid black;padding:2rem">
+                            <b>T-2</b>
+                        </td>
+                        <td  style="border:2px solid black;padding:1rem">
+                            Idegennyelvű helyes választ felismeri-e.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  style="border:2px solid black;padding:2rem">
+                            <b>T-3</b>
+                        </td>
+                        <td  style="border:2px solid black;padding:1rem">
+                            Idegennyelvű helytelen választ felismeri-e.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  style="border:2px solid black;padding:2rem">
+                            <b>T-4</b>
+                        </td>
+                        <td  style="border:2px solid black;padding:1rem">
+                            Magyar helyes választ felismeri-e.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  style="border:2px solid black;padding:2rem">
+                            <b>T-5</b>
+                        </td>
+                        <td  style="border:2px solid black;padding:1rem">
+                            Magyar helyes választ felismeri-e.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  style="border:2px solid black;padding:2rem">
+                            <b>T-6</b>
+                        </td>
+                        <td  style="border:2px solid black;padding:1rem">
+                            Helyesen írja-e ki a helyes választ ha helytelen választ adunk.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  style="border:2px solid black;padding:2rem">
+                            <b>T-7</b>
+                        </td>
+                        <td  style="border:2px solid black;padding:1rem">
+                            Kiírja-e, hogy helyes válasz ha helyes választ adunk.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  style="border:2px solid black;padding:2rem">
+                            <b>T-8</b>
+                        </td>
+                        <td  style="border:2px solid black;padding:1rem">
+                            Kiírja-e, hogy helytelen válasz ha helytelen választ adunk.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  style="border:2px solid black;padding:2rem">
+                            <b>T-9</b>
+                        </td>
+                        <td  style="border:2px solid black;padding:1rem">
+                            Kis és nagybetűket egyaránt elfogadja a válasznál.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  style="border:2px solid black;padding:2rem">
+                            <b>T-10</b>
+                        </td>
+                        <td  style="border:2px solid black;padding:1rem">
+                            Teljesen nagybetűvel írt válasz elfogadása.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

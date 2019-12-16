@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8"></meta>
+		<title>Rendszerkövetelmények</title>
+	</head>
+
+	<body>
+		<h1>Rendszerkspecifikáció</h1>
+
+		<h2>1. A rendszer célja</h2>
+
+		<p>
+			Rendszerünk célja, hogy megkönnyítse az emberek nyelvtanulásának folyamatát.
+			Szeretnénk egy olyan stoftvert készíteni, melynek segítségével bárki
+			könnyedén fejlesztheti nyelvtudását, anélkül, hogy drága könyvekre kellene
+			költenie vagy esetleg magántanárhoz járna. Felhasználóink számára szeretnénk
+			biztosítani az egyéni haladást ugyan azon számítógépen,aminek köszönhetően
+			számontarthatják egyéni haladásukat a különböző nyelvek tanulásában.
+			Céljaink közé tartozik az is, hogy egy szilárd szókincset adjunk a tanulóinknak,
+			ennek érdekében pedig folyamatosan visszakérdezünk a már megtanult szavakra is,
+			biztosítva ezzel, hogy a felhasználó folyamatosan felidézze és használja a korábban
+			elsajátított szópárokat is.
+		</p>
+
+		<h2>2. Projekt terv</h2>
+
+		<h3>2.1 Szereppkörök,felelősségek</h3>
+
+		<div style="display:flex;justify-content: center">
+			<table style="border-collapse: collapse;">
+				<th>
+					<tr style="text-align: center;">
+						<td style="border:2px solid black;padding:1rem">
+							<b>Szerepkör</b>
+						</td>
+						<td style="border:2px solid black;padding:1rem">
+							<b>Felelősség</b>
+						</td>
+					</tr>
+				</th>
+				<tbody>
+					<tr >
+						<td style="border:2px solid black;padding:2rem">
+							<b>Felhasználók</b>
+						</td>
+						<td  style="border:2px solid black;padding:1rem">
+							Használni a programot, megtanulni a kiválasztott nyelvet és
+							használni a megtanult nyelveket.
+						</td>
+					</tr>
+					<tr>
+						<td  style="border:2px solid black;padding:2rem"">
+							<b>Fejlesztők</b>
+						</td>
+						<td  style="border:2px solid black;padding:1rem">
+							Karbantartani, illetve továbbfejleszteni az alkalmazást,
+							felhasználók féle lehetőséget biztosítani a hibák bejelentésére.
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<h3> 2.2 A fejlesztők és feladataik </h3>
+
+		<div style="display:flex;justify-content: center">
+			<table style="border-collapse: collapse;">
+				<th>
+					<tr style="text-align: center;">
+						<td style="border:2px solid black;padding:1rem">
+							<b>Név</b>
+						</td>
+						<td style="border:2px solid black;padding:1rem">
+							<b>Feladat</b>
+						</td>
+					</tr>
+				</th>
+				<tbody>
+					<tr >
+						<td style="border:2px solid black;padding:2rem">
+							<b>Tarcsa Tamás</b>
+						</td>
+						<td  style="border:2px solid black;padding:1rem">
+							A visszakérdezés folyamatának megírása.
+							Adatbázis menedzselése a projektben
+						</td>
+					</tr>
+					<tr >
+						<td style="border:2px solid black;padding:2rem">
+							<b>Bakos Bálint</b>
+						</td>
+						<td  style="border:2px solid black;padding:1rem">
+							Bejelentkezés,illetve tanulási folyamat elkészítése.
+						</td>
+					</tr>
+					<tr >
+						<td style="border:2px solid black;padding:2rem">
+							<b>Erdei Kristóf</b>
+						</td>
+						<td  style="border:2px solid black;padding:1rem">
+							Front-end fejlesztés
+						</td>
+					</tr>
+					<tr>
+						<td  style="border:2px solid black;padding:2rem"">
+							<b>Tóth Csaba</b>
+						</td>
+						<td  style="border:2px solid black;padding:1rem">
+							Tesztek megírása,Front-end fejlesztés
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+			
+		<h3> 2.3 Ütemterv </h3>
+		
+
+		<div style="display:flex;justify-content: center">
+			<table style="border-collapse: collapse;">
+				<th>
+					<tr style="text-align: center;">
+						<td style="border:2px solid black;padding:1rem">
+							<b>Dátum</b>
+						</td>
+						<td style="border:2px solid black;padding:1rem">
+							<b>Haladás</b>
+						</td>
+					</tr>
+				</th>
+				<tbody>
+					<tr >
+						<td style="border:2px solid black;padding:2rem">
+							<b>2019.09.25</b>
+						</td>
+						<td  style="border:2px solid black;padding:1rem">
+							Szükséges dokumentumok elkészülése
+						</td>
+					</tr>
+					<tr>
+						<td  style="border:2px solid black;padding:2rem"">
+							<b>2019.09.27</b>
+						</td>
+						<td  style="border:2px solid black;padding:1rem">
+							A projekt alapfunkciói működőképesek
+						</td>
+					</tr>
+					<tr>
+						<td  style="border:2px solid black;padding:2rem"">
+							<b>2019.09.30</b>
+						</td>
+						<td  style="border:2px solid black;padding:1rem">
+							A szoftver elkészülése.
+						</td>
+					</tr>
+					<tr>
+						<td  style="border:2px solid black;padding:2rem"">
+							<b>2019.09.30 után</b>
+						</td>
+						<td  style="border:2px solid black;padding:1rem">
+							Karbantartás igény esetén.
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<h3> 2.4 Mérföldkövek </h3>
+
+		<p style="margin-left:5em;line-height: 3rem">
+			<b> 1. Dokmentációk elkészülése <br>
+				2. Szerepkörök kiosztása és projekt kezdése<br>
+				3. Alapvető funkciók működése <br>
+				4. Grafikus felület elkészülése <br>
+				5. Tesztek írása<br>
+				6. A projekt elkészülése
+			</b>
+		</p>
+
+		<h2>3. Funkcionális tervek</h2>
+
+		<h3>3.4 Határosztályok</h3>
+
+		<h3>3.5 Képernyőtervek</h3>
+
+		<p>Az üdvözlő képerníőre képzeltük el a bejelentkezést, természetes a háttér valamilyen kép vagy szín lenne:</p>
+		<img src="./Pictures/Üdvözlö.png"/><br>
+
+		<p>A tanulási folyamatot egy, a következőhöz hasonló képernyőn képzeltük el:</p>
+		<img src="./Pictures/Tanulas.png"/><br>
+
+		<p>A visszakérdezést pedig hasonlóképpen tervezzük megvalósítani:</p>
+		<img src="./Pictures/Kikerdez.png"/><br>
+
+		<h2>1. Mit készítünk?</h2>
+
+		<p>
+			Egy olyan szoftvert szeretnénk készíteni, aminek segítségével az emberek
+			könnyedén fejleszthetik nyelvtudásukat. Különböző nyelvek egyszerre történő
+			tanulását is szeretnénk lehetővé tenni a programban, illetve céljaink
+			közé tartozik, hogy a programban felhasználónév és jelszó segítségével
+			elkülönítsük a felhasznlók előrehaladását, így akár ugyan azon számítógépen
+			egyszerre akár többen is használhatják a programot gond nélkül. Szeretnénk
+			elkülöníteni benne a szófajokat is, így specifikusabban tudnak a felhasználók
+			tanulni. A program feladata lesz az is,hogy kikérdezze a felhasználó által
+			tanult új szavakat, beleszőve a kikérdezés folyamatába a korábban már megtanult
+			szavakat is, ezzel ismételve, hogy biztosak legyünk benne, hogy nemcsak ideig
+			óráig tartott a tanuló tudása.
+		</p>
+
+		<h2>2. Miért készítjük?</h2>
+
+		<p>
+			Szoftverünkkel azon emberek problémáját kívánjuk megoldani, akiknek nehézkesen
+			megy a nyelvtanulás, nincs pénzük a drága nyelvkönyvekre vagy magántanárra, ahogyan
+			már említettük a Követelmény Specifikációban. Bár szoftverünk célja jelen pillanatban
+			csak a választott nyelven belüli szókincs bővítése, véleményünk szerint az idegen nyelven
+			történő magabiztos felszólalás alapja egy szilárd szókincs.
+		</p>
+
+		<h2>3. Hogyan valósítjuk meg?</h2>
+
+		<h3>3.1 A bejelentkezés</h3>
+
+		<h4>3.1.1 A jelszó titkosítása</h4>
+
+		<p>
+			Elsősorban amire szükségünk lesz, az egy User osztály, amiben egy felhasználó
+			nevét, kódolt jelszavát, illetve a már megtanult szópárokat tároljuk egy map-ben,ahol
+			a magyar nyelvű szó a kulcs, míg az idegen nyelvű az érték rész. A jelszó  kódolosa
+			a következőhöz hasonlóan történjen:
+			
+			<code><br>
+				String jelszo  = "jelszo";<br>
+				String hash1 = "nisofnipafnspsa$cas2324";<br>
+				String hash2 = "nsnbpivan/@ejof46546fsafvca";<br>
+
+				String kodolt = hash1 + Caesar(jelszo) + hash2;<br>
+			</code>
+
+			,ahol a Caesar egy függvényt jelöl, ami Caesar kódolással lekódolja a jelszó részt.
+			Ennek megfelelően a visszaellenőrzés úgy történjen:
+
+			<code><br>
+				Char[] pwd = pwdField.getPassword();<br>
+				if(user.passwd.equals(hash1 + Caesar(pwd)+hash2))<br>
+					//Sikeres bejelentkezés<br>
+				else<br>
+					//Sikertelen bejelentkezés<br>
+			</code>
+
+		</p>
+			
+		<h4>3.1.2 A jelszó visszaállítása</h4>
+
+		<p>
+			Amennyiben a felhasználó elfelejtené a jelszavát biztosítanunk kell neki egy
+			lehetőséget,amivel megváltoztatja.Ennek érdekében a User osztályban tárolni
+			kell egy jelszó-visszaállító kódot, amit a felhasználótól majd elkérhet a 
+			program, a helyreállítás érdekében. A jelszó visszanyerésére, használjuk
+			a Stringek substr() metódusát, valamint írjunk egy Caesar dekódolót. 
+			A helyesen beütött kód utána jelenjen meg a felhasználónak a jelenlegi 
+			jelszava, valamint egy kérdés, hogy szeretné-e megváltoztatni ezt. Biztosítsunk
+			lehetőséget a megváltoztatásra. A program csak sikeres bejelentkezés vagy
+			a "Használat vendégként" gomb választása után induljon el.
+		</p>
+
+		<h3>3.2 Az adatok tárolása</h3>
+
+		<h4>3.2.1 A felhasználó adatai</h4>
+
+		<p>
+			Az adatok tárolására .json fájlokat használjunk, melyek írásához, illetve
+			olvasásához a gson könyvtárat használjuk. Legalább két adatbázisra lesz
+			szükségünk a projekt megvalósításához. Az egyik adatbázisban a felhasználók
+			adatait tároljuk, a felhasználónevüket, jelszavukat és a már megtanult szavak
+			listáját map-ként. 
+				
+			<code>
+				[
+					{
+						"username": felhasznalonev,
+						"password": jelszo,
+						"recover": helyreallito,
+						"angol": {
+								'főnév': {
+									"magyar1": "angol1",
+									"magyar2": "angol2"
+									...
+									},
+								"melleknev": {
+									"magyar1": "angol1",
+									"magyar2": "angol2"
+									...
+									}
+								},
+						"francia": {
+							"melleknev": {
+								"magyar1": "francia1",
+								"magyar2": "francia2"
+								...
+								},
+							'főnév': {
+									"magyar1": "francia1",
+									"magyar2": "francia2"
+									...
+								}
+							}
+					}
+				]
+			</code>
+
+		</p>
+			
+		<h4>3.2.2 A szótárak tárolása</h4>
+
+		<p>
+			A másik fájl a nyelveket és a szópárokat tartalmazza.
+			Itt választhatjuk azt is, hogy minden nyelvnek külön fájlt hozunk létre.
+			Amennyiben az egy fájlost megoldást választjuk, úgy kulcs-érték párokként
+			tároljuk a nyelveket és a szavakat, ahol a kulcs a nyelv, az érték pedig
+			a szótárunk.
+
+			<code>
+				[
+					{
+						"angol": {
+								'főnév': {
+									"magyar1": "angol1",
+									"magyar2": "angol2"
+									...
+									},
+								"melleknev": {
+									"magyar1": "angol1",
+									"magyar2": "angol2"
+									...
+									}
+								},
+						"francia": {
+							"melleknev": {
+								"magyar1": "francia1",
+								"magyar2": "francia2"
+								...
+								},
+							'főnév': {
+									"magyar1": "francia1",
+									"magyar2": "francia2"
+									...
+								}
+							}
+					}
+				]
+			</code>
+
+			A nyelvek különböző fájlokban való tárolása esetén pedig a felhasználó
+			választása alapján csak kiválasztjuk melyik json fájlt töltse be a program,
+			hogy a választott nyelvű szavak szótárát kapjuk.
+		</p>
+
+		<h3>3.3 A visszakérdezés folyamata</h3>
+
+		<p>
+			A felhasználó által újonnan megtanult szavak listájából random kiválasztunk egy szópárt, amiből véletlenszerűen
+			kivesszük a magyar vagy az idegen nyelvi szót. Ezután megjelenítjük ezt a felhasználónak akinek ki kell egészítenie a helyes
+			fordítással. A felhasználó által megadott fordítást ellenőriznie kell a programnak. A szót először kisbetűsre kell
+			átváltani, hogy ne számítson hogyan lett megadva szó nagy vagy kis betűvel. Majd a megadott szót betűnként össze kell
+			hasonlítani a kérdezett szó párjával. Ez Javaban történhet az equals metódussal. Ha helyes a metódus visszaad egy truet vagy falset,
+			ezzel látszik, hogy helyesen adte-e meg a felhasználó a szót. Helyes megadás után a szöveg mező zöldre változik, ha helytelenül adják meg
+			akkor pedig pirosra változik és megjeleníti a helyes választ. Ezután ismét válasszunk szópárt. Ha a felhasználó kétszer eltalálta ugyanazt a szót
+			az átkerül a megtanult szavak listájába.
+		</p>
+
+		<h2>4. Üzleti folyamatok modellje</h2>
+
+		<p>
+			A most fentálló nyelvtanulási módszerünk nem felhasználóbarát. A papíron történő
+			tanulási folyamatok elavultnak tekinthetőek. Másrészt időigényes, nem végezhető
+			Bárhol és bármikor. Ezzel szemben az új üzleti folyamatunk segítségével a felhasználó
+			igényeit a mai kornak megfelelő módszerekkel fogjuk kielégítni. Azzal, hogy digitális
+			platformra helyezzük a tanulást. Ehhez elég rendelkezni a programunkkal, amit már
+			bárhol bármikor bárki használhat gyorsan és egyszerűen. Így megfelelő szolgáltatást
+			tudunk nyújtani mindenki számára, aki nyelvet szeretne tanulni. A program futtatása
+			után a felhasználó elkészíti a profilját, ha az még nem létezik. Ha igen, akkor bejelentkezik. Ezután kiválasztja azt, hogy épp milyen nyelven szeretne éppen tanulni.
+			Majd jöhet is a tanulás folyamata, amit a felhasználó egyszerűen, könnyen kezelhetően,
+			Intuitívan tud kezelni és használni.
+		</p>
+
+		<h2>5. Követelmények</h2>
+
+		<p>
+			Programunkak rendelkezni kell funkcionális, illetve nem funkcionális követelményekkel is. 
+			Fontos számunkra, hogy a kevésbé profi számítógépes felhasználók is boldogulni tudjanak a rendszerünkkel, ne jelenthessen ez semmiféle hátráltató tényezőt. 
+			Emiatt az alkalmazásunknak a lehető leginkább egyszerűnek és könnyen kezelhetőnek kell lennie. A kezelőfelütnek egyszerűen átláthatónak, letisztultnak, szépnek kell lennie. 
+			A felhasználónak legyen lehetősége saját profilt csinálni. Legyen lehetősége bejelentkeznie.
+			Tudjon tetszés szerint tanulni kívánt nyelvet választani. Fontos szempont, hogy programunk ne foglaljon túlságosan sok tárhelyet. 
+			Illetve ne legyen nagy rendszerigénye, hogy minél széresebb körben el tudjon terjedni. Ha internetes kapcsolat szükséges, akkor pedig a lehető legkevesebb adatforgalmat generálja. 
+			A felhasználó részéről feltétel, hogy rendelkezzen ezekhez megfelelő számítógéppel.
+		</p>
+
+		<h2>6. Funkcionális terv</h2> 
+		
+		<p></p>
+		
+		<h2>7. Fizikai környezet</h2> 
+		
+		<p></p>
+		
+		<h2>8. Absztrakt domain modell</h2> 
+		
+		<p></p>
+
+		<h2>9. Architektúrális terv</h2> 
+			
+		<h3>9.1 Egy architektúrális tervezési minta</h3>
+			
+		<p>
+			A szoftverünk megvalósítása az MVC, magyarul MNV azaz a Modell-Nézet-Vezérlő elveit fogja követni,
+			ami azt jelenti, hogy az alkalmazásunkat több rétegre bontjuk fel, ami áll a megjelenítésből, azaz 
+			a felhasználói felületből, amit a szoftvert használók ténylegesen látnak az alkalmazásból, áll a
+			"logikából", ami a felhasználó által véghezvitt eseményeket, műveleteket dolgozza fel, ami
+			kiválthat további eseménysorozatot, illetve áll a tárolt adatok kezelésével foglalkozó részből,
+			jellemzően az adatokat egy adatbázisban tárolják, mi jelen esetben .json fájlokat használunk
+			az adatok tárolásához. Azzal, hogy ezt a megvalósítást választottuk nagyban megkönnyíti a munkánkat,
+			hiszen átláthatóbb lesz ezzel legfőképpen a kódunk.
+		</p>
+			
+		<h3>9.2 Az alkalmazás rétegei, fő komponensei, ezek kapcsolatai</h3>
+			
+		<p>
+			A már korábban említett minta alapján, azaz a Modell-Nézet-Vezérlő szerint alakul 
+			az alkalmazásunk rétegei. A program elején, amikor elkérünk néhány adatot a felhasználótól, 
+			aki megadja a kért adatokat, ezzel bekerülnek egy .json adatok tárolására alkalmazott fájlba,
+			amivel már módosítottuk az adatbázisunkat. Tehát már az elején kapcsolat alakul ki az adatbázis,
+			a vezérlő és a nézet között, ahol a felhasználó adta meg a szükséges információkat. 
+			Továbbiakban a programunk egy fontos részét képezi a tanulási folyamat rész, ahol a felhasználó
+			tanulja a választott nyelvet, ami szintén egy külön .json fájlban van tárolva,tehát itt is történik
+			kommunikáció az említett rétegek között. Hasonlóan a tanulási folyamat részhez, a visszakérdezés
+			folyamata is jelentős a programunkban, mint ismert, a tanulás folyamat alatt a program megjegyzi,
+			hogy a felhasználó miket tanult már meg és ebből véletlenszerűen választva jelnnek meg a szópárok
+			felváltva hiányosan, ahol a felhasználónak kell a tudása alapján megfelelően kitölteni a hiányzó részt, 
+			tehát a háttérben egy ellenőrzés történik a felhasználó tudta nélkül és a begépelt válasznak megfelelően
+			zöld, tehát jó vagy pedig piros, azaz rossz választ adott meg, ezzel is manipulálva a kimenetet,
+			hogy milyen választ adott. Programunk fő komponensei közé tartozik a tesztek végrehajtása.
+			A lehető legtöbb tesztek végrehajtása elősegíti a programunk megfelelő működését.
+		</p>
+			
+		<h3>9.3 Változások kezelése</h3>
+			
+		<p>
+			A programunk kódjának megírása közben igyekszünk törekedni arra, hogy esetleges jövőbeli kódbeli változtatások
+			ne történjen nagy fejfájással. Igyekszünk tehát olyan rugalmas programot írni, amit ha később valamiért
+			megszeretnént bizonyos szintig módosítani, akkor azt a jól rétegelt és felépített kódot minden további nélkül
+			könnyedén megtudjuk csinálni
+			Tovább, ha egy olyan ember nézne rá a kódra aki először látja, például egy cég megvette a programot vagy éppen
+			csak közös munka folyik bizonyos emberekkel, és valamit szeretne módosítani akkor ne zavarodjon bele, tehát
+			fontos, hogy a programunk nyitott legyen a változásokra és ez már tovább megy akár a rendszer bővíthetőségig
+			amiről már a következő fejezetben beszélünk.
+		</p>
+			
+		<h3>9.4 Rendszer bővíthetősége</h3>
+
+		<p>
+			Mivel egy nyelvtanulós programról beszélünk, ezért fontos lehet, hogy több nyelv közül is lehessen
+			választani a későbbiekben, ami a felhasználói közönséget növeli. A rendszer felépítéséből adódóan
+			lehetőségünk lehet többféle választást kínálni a felhasználóknak a témák kapcsán, hogy milyen
+			témakörökben szeretnék erősíteni a tudásukat.
+		</p>
+		
+		<h3>9.5 Biztonsági funkciók</h3>
+
+		<p>
+			A felhasználóknak biztosítunk egy bejelentkezési lehetőséget, jelszóval ellátva
+			és így mindenki saját maga nyomon tudja követni, a már megtanult szavait.
+			A jelszó titkosítására úgynevezett "Caesar" kódolási technikát alkalmazunk, kiegészítve
+			két darab String típusú "hash"-el, ami a megadott jelszó köré kerül, így megnehezítve az
+			esetleges jelszó feltöréseket.
+		</p>
+		
+		<h2>10. Implementációs terv</h2> 
+		
+		<p>
+			
+		</p>
+
+		<h2>11. Tesztterv</h2>
+
+		<p>
+			Szintén fontos pont a rendzserünk sikeres elkészítésének folyamatában az, hogy megfelelő tesztelést vigyünk véghez. 
+			Nem szeretnénk, ha a kiadás után súlyos vagy akár kevébé súlyos hibák benne maradnának. Illetve valami nem működne rendesen, 
+			esetleg egyáltalán vagy nem úgy ahogy mi azt szeretnénk. Emiatt folyamatosan ellenőrizni fogjuk a programunk működését már a fejlesztés elkezdésének első szakaszaiban is. 
+			Ebben mindenki részt fog venni, illetve a későbbiekben külsős tesztelőket is bevonhatunk majd a teljes siker érdekében. 
+			Mindennek tökéletesen kell működnie ahhoz, hogy  a teszt sikeres legyen. Kezdve azzal, hogy a felhasználási felületek rendesen betöltődnek-e, a menü elemek, a gombok, 
+			a felületek amikkel interakcióba lépnek a felhasználók mind mind működnek, méghozzá pontosan úgy ahogy azt mi elvárjuk. 
+			A bejelentkezés folyamatának mindenképp működőképesnek és gördülékenynek kell lennie. Pont úgy, mint ahogyan a nyelv kiválasztásának és azt követő teljes tanulási folyamatnak. 
+			A program legyen megfelelőképp gyors, hogy a felhasználónak öröm legyen használnia.
+			
+		</p>
+		
+		<p>A tesztek véghezviteléhez ezúttal manuális tesztelést végeztünk el:</p>
+			
+			<table style="border-collapse: collapse;">
+				<tr>
+					<th style="border:1px solid grey;padding:1rem; ">Vizsgálni kívánt teszt megnevezés</th>
+					<th style="border:1px solid grey;padding:1rem; ">Szükséges lépés</th>
+					<th style="border:1px solid grey;padding:1rem; ">Megtett lépés eredménye</th>
+				</tr>
+                <tr>
+                <td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">A program elindítása</td>
+                <td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">java -jar Nyelvtanulas-1.0-SNAPSHOT.jar</td>
+                <td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">A program elindult.</td>
+                </tr>
+				<tr>
+					<td style="border:1px solid grey;padding:1rem;">"Regisztráció" gomb megjeleníti-e a regisztráció felületet?</td>
+					<td style="border:1px solid grey;padding:1rem;">Egérrel bal click gombra.</td>
+					<td style="border:1px solid grey;padding:1rem;">Megnyílik a regisztrációi felület.</td>
+				</tr>
+				<tr>
+					<td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">"Új jelszó" gomb megjeleníti-e a kívánt felületet?</td>
+					<td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">Egérrel bal click a gombra.</td>
+					<td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">Megnyílik az "Új jelszó" felület.</td>
+				</tr>
+				<tr>
+					<td style="border:1px solid grey;padding:1rem;">"Kilépés" gomb bezárja az alkalmazást.</td>
+					<td style="border:1px solid grey;padding:1rem;">Egérrel bal click a "kilépés" gombra.</td>
+					<td style="border:1px solid grey;padding:1rem;">Kilép a program.</td>
+				</tr>
+				<tr>
+					<td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">"Bejelentkezés" gomb a helyesen megadott adatokkal beengedi a felhasználót.</td>
+					<td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">"Felhasználó" és "Jelszó" mező helyes kitöltése.</td>
+					<td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">Megnyílik a nyelvválasztás lehetőség.</td>
+				</tr>
+				<tr>
+					<td style="border:1px solid grey;padding:1rem;">Helytelenül megadott felhasználó és/vagy jelszó.</td>
+					<td style="border:1px solid grey;padding:1rem;">Helytelenül beírt felhasználó és/vagy jelszó.</td>
+					<td style="border:1px solid grey;padding:1rem;">Hiba üzenet kíírása a problémáról.</td>
+				</tr>
+				<tr>
+					<td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">Regisztráció felületen a regisztráció helyessége.</td>
+					<td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">A felhasználó egy felhasználó nevet és jelszót ad meg.</td>
+					<td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">Regisztrálva lett a felhasználó.</td>
+				</tr>
+				<tr>
+					<td style="border:1px solid grey;padding:1rem;">Nyelvválasztásnál a zászlókra kattintás.</td>
+					<td style="border:1px solid grey;padding:1rem;">Zászlók valamelyikére bal click.</td>
+					<td style="border:1px solid grey;padding:1rem;">Tanulási folyamat elindulása.</td>
+				</tr>
+				<tr>
+					<td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">Tanulási folyamatnál az "Előző" gomb az előző szópárt jeleníti meg.</td>
+					<td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">Bal click az "Előző" gombra</td>
+					<td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">A program visszaugrik az előző szópárra.</td>
+				</tr>
+                <tr>
+                <td style="border:1px solid grey;padding:1rem;">Az "Előző" gombra való kattintás, ha nem volt még előző.</td>
+                <td style="border:1px solid grey; padding:1rem;">Bal click az "Előző" gombra.</td>
+                <td style="border:1px solid grey;padding:1rem;">A kattintás nem engedélyezett.</td>
+                </tr>
+                <tr>
+                <td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">A "Következő" gombra való kattintás, ha elfogytak a szavak.</td>
+                <td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">Bal click a "Következő" gombra.</td>
+                <td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">A kattintás nem engedélyezett.</td>
+                </tr>
+				<tr>
+					<td style="border:1px solid grey;padding:1rem;" >Tanulási folyamatnál az "Következő" gomb a következő szópárt jeleníti meg.</td>
+					<td style="border:1px solid grey;padding:1rem;" >Bal click a "Kővetkező" gombra.</td>
+					<td style="border:1px solid grey;padding:1rem;" >A program a következő szópárt megjeleníti.</td>
+				</tr>
+				<tr>
+					<td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">Tanulási folyamatnál a "Teszt" gomb megnyomása és a teszt elindítása.</td>
+					<td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">Bal click a "Teszt" gombra.</td>
+					<td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">Elindul a tesztelés fázis.</td>
+				</tr>
+				<tr>
+					<td style="border:1px solid grey;padding:1rem;" >Sikeres teszt végén Gratuláció ablak felugrása.</td>
+					<td style="border:1px solid grey;padding:1rem;" >Sikeresen teljesíteni a tesztet a megadott módon.</td>
+					<td style="border:1px solid grey;padding:1rem;" >A program megjeleníti a gratulációs felületet.</td>
+				</tr>
+				<tr>
+					<td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">A teszt során beírt helyes válasz a felhasználótól.</td>
+					<td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">Helyes válasz beírása a megadott helyre.</td>
+					<td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">"Helyes válasz" kíírása és következő szópár megjelenése.</td>
+				</tr>
+				<tr>
+					<td style="border:1px solid grey;padding:1rem;" >A teszt során beírt helytelen válasz a felhasználótól.</td>
+					<td style="border:1px solid grey;padding:1rem;" >Helytelen válasz beírása a megadott helyre.</td>
+					<td style="border:1px solid grey;padding:1rem;" >Rossz válasz jelzése a felhaszbálónak és a jó válasz megjelenítése.</td>
+				</tr>
+                <tr>
+                <td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">A "Teszt" gombra való kattintás a tanulás megkezdése.</td>
+                <td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">Bal click a "Teszt" gombra.</td>
+                <td style="border:1px solid grey;padding:1rem; background-color: #E0FFFF">A kattintás nem engedélyezett.</td>
+                </tr>
+			</table>
+			
+		<h3>11.1 Mit tesztelünk? Miért?</h3>
+			
+		<p>
+			Minden a apróságot tesztelnünk kell, hogy véletlenül se csússzon be semmilyen hiba a szoftverbe.
+			Tesztelnünk kell: a felhasználó sikeresen betud-e jelentkezni a ténylegesen megadott jelszójával és
+			felhasználónevével, szakszerűen a választható nyelveket tölti be a program, majd a megfelelő
+			szópárokat olvassa be a memóriába, pontosan annyi szópárt jelenít meg a felhasználónak amennyit kell,
+			megjeleníti-e a felhasználónak a szópárokat, a tudásellenőzés során a program csak a helyes megoldást
+			fogadja el, felváltva kérdez fordítást magyarról idegen nyelvre és idegen nyelvről magyarra,
+			ha minden szópárt helyesen megválaszolt kétszer, akkor a program teljesítettnek minősíti a tesztet és
+			elmenti a szópárokat, hogy legközelebb azt már ne kérdezze, kis és nagybetűt nem veszi figyelmebe az 
+			ellenőrzés, a szavakat helyesen ellenőrzi.
+		</p>
+		
+		<h2>12. Telepítési terv</h2> 
+		
+		<p>
+			Ahhoz, hogy a program futtatható legyen a gépre telepíteni kell a mavent ez a build folyamat 
+			automatizálásában segít. Ezután az mvn compile paranccsal lefordítjuk byte kódra a forráskódot.
+			Majd az mvn package paranccsal egy jar fájlt hozunk létre, amely a target mappába kerül.
+			Ezzel pedig futtatható maga a szoftver: java -jar Nyelvtanulas.jar.
+		</p>
+
+		<h2>13. Karbantartási terv</h2>
+
+		<p>
+			Természetesen programunkat elkészülte után nem szeretnénk bejefezettnek tekinteni. A sikeres teszt elvégzésétől függetlenül, 
+			ha bármilyen hiba előjön, azt javítani szeretnénk minél hamarabb, nem cserben hagyva felhasználóinkat. Emelett szeretnénk a későbbiekben tovább fejleszteni szoftverünket, 
+			folyamatosan új funkciókat hozzáadva. Ennek érdekében szeretnénk kontaktot tartani a felhasználóinkkal, hallgatni az észrevételeikre. 
+			Illetve, ha bármilyen probléma merül fel részükről, annak megoldásában a segítségükre lenni. Ezáltal a jövőben várhatóak frissítések, 
+			amiket szintén tesztelni fogunk, ahogy az a teszttervek alcím alatt megtalálható. Szeretnénk, ha ez a projekt egy minél szélesebb palettát fedne le a jövőben
+			a nyelvtanulás témakörön belül. Amivel akár az adott nyelv teljes elsajátítása lehetséges.
+		</p>
+	</body>
+</html>

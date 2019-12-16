@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.KikerdezController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D3D3D3;">
+         <children>
+            <Text layoutX="130.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kiválasztott nyelv - Kikérdezés">
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="157.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Választott nyelvű szó - magyar megfelelője">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="askedOne" layoutX="70.0" layoutY="190.0" prefHeight="27.0" prefWidth="174.0" text="Peach">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <Text layoutX="300" layoutY="210" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font>
+            </Text>
+            <TextField fx:id="anotherOne" layoutX="352.0" layoutY="190.0" text="Barack">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Text fx:id="helyes" layoutX="179.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Helytelen válasz esetén itt jelenik meg a helyes válasz" textAlignment="CENTER" wrappingWidth="242.564453125">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Text>
+            <Button id="nextButt" fx:id="nextButt" layoutX="253.0" layoutY="321.0" mnemonicParsing="false" onAction="#checkAnsw" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" prefHeight="29.0" prefWidth="94.0" style="-fx-background-color: #696969;" text="Következő" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+            <Button id="quitButt" fx:id="quitButt" layoutX="253.0" layoutY="357.0" mnemonicParsing="false" onAction="#quitButtClicked" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" prefHeight="29.0" prefWidth="94.0" style="-fx-background-color: #696969;" text="Kilépés" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

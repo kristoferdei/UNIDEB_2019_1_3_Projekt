@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="200.0" prefWidth="600.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegController">
+   <children>
+       <Pane prefHeight="200.0" prefWidth="600.0">
+          <children>
+              <Text layoutX="243.0" layoutY="42.0" text="Regisztráció">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="passwd" alignment="CENTER" layoutX="218.0" layoutY="100.0" prefHeight="23.0" prefWidth="163.0" promptText="Jelszó">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </PasswordField>
+            <Button id="okButt" fx:id="okButt" alignment="CENTER" contentDisplay="CENTER" layoutX="277.0" layoutY="145.0" mnemonicParsing="false" onAction="#handleChangeButtonClicked" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" style="-fx-background-color: #696969;" text="OK" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font></Button>
+            <TextField fx:id="uname" alignment="CENTER" layoutX="218.0" layoutY="68.0" promptText="Felhasználónév">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </TextField>
+          </children>
+       </Pane>
+   </children>
+
+</AnchorPane>

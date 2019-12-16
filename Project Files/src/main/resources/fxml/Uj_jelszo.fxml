@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="200.0" prefWidth="600.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Uj_jelszoController">
+   <children>
+       <Pane prefHeight="200.0" prefWidth="600.0">
+          <children>
+              <Text layoutX="212.0" layoutY="43.0" text="Új jelszó megadása">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Text>
+            <PasswordField id="newPasw" alignment="CENTER" layoutX="224.0" layoutY="87.0" prefHeight="22.0" prefWidth="149.0" promptText="Add meg az új jelszót">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </PasswordField>
+            <Button id="changeButt" fx:id="changeButt" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor"
+                    alignment="CENTER" contentDisplay="CENTER" layoutX="278.0" layoutY="128.0" mnemonicParsing="false" onAction="#handleChangeButtonClicked" style="-fx-background-color: #696969;" text="OK" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font></Button>
+          </children>
+       </Pane>
+   </children>
+
+</AnchorPane>

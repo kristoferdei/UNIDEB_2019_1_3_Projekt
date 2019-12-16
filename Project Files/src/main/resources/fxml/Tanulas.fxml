@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TanulasController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D3D3D3;">
+         <children>
+            <Text layoutX="99.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kiválasztott nyelv - Tanulási folyamat" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font>
+            </Text>
+
+            <Text fx:id="key" layoutX="129.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-padding: 20%" text="Idegen nyelvű szó" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="298.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-padding: 20%" text="-" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="value" layoutX="344.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-padding: 20%;-fx-font-size: 120%" text="Magyar megfelelő" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Text>
+            <Button id="prevButt" fx:id="prevButt" layoutX="94.0" layoutY="306.0" mnemonicParsing="false" onAction="#prevWord" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" prefHeight="29.0" prefWidth="95.0" style="-fx-background-color: #696969;" text="Előző" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button id="testButt" fx:id="testButt" layoutX="255.0" layoutY="306.0" mnemonicParsing="false" onAction="#handleTestButtonClicked" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" prefHeight="28.0" prefWidth="95.0" style="-fx-background-color: #696969;" text="Teszt" textAlignment="CENTER" textFill="WHITE" visible="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button id="nextButt" fx:id="nextButt" layoutX="410.0" layoutY="306.0" mnemonicParsing="false" onAction="#nextWord" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" style="-fx-background-color: #696969;" text="Következő" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button id="quitButt" fx:id="quitButt" layoutX="255.0" layoutY="357.0" mnemonicParsing="false" onAction="#quitButtClicked" onMouseEntered="#changeButtonColor" onMouseExited="#changeBackColor" prefHeight="29.0" prefWidth="95.0" style="-fx-background-color: #696969;" text="Kilépés" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
